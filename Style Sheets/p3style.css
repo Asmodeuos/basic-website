@@ -1,0 +1,106 @@
+/* * effects all elements*/
+*{
+    box-sizing: border-box;
+    /*box size can change without worrying about margins or padding*/
+}
+
+h1{
+    border: 3px solid hsl(282, 100%, 25%);
+    border-radius: 18px;
+}
+#p1{
+    border-bottom: 3px solid red;
+    border-top: 3px dashed yellow;
+    border-left: 3px dotted orange;
+    border-right: 3px dotted green;
+    border-radius: 12px;
+}
+h2{
+    text-shadow: 3px 3px 5px red, -3px -3px 5px blue;
+}
+#boxx{
+    width: 100px;
+    height: 100px;
+    background-color: hsl(0, 8%, 90%);
+    box-shadow: 3px 3px 5px;
+}
+#body-section{
+    border: 3px solid;
+    display:flow-root;
+    margin:auto;
+}
+body{
+    margin:5px;
+}
+.box{
+    border: 2px solid;
+    font-size: 1em;
+    color: white;
+    width: 50px;
+    height: 50px;
+}
+#box1{
+    margin-top: 50px;
+    background-color: red;
+    margin: auto;
+}
+#box2{
+    margin-top: 20px;
+    background-color: rgb(17, 0, 255);
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+/*flow property allows other elements to flow around it */
+#img1{
+    float: left;
+    margin-right: 10px;
+}
+#img2{
+    float: right;
+    margin-left: 10px;
+}
+#div2{
+    border: 2px solid;
+    margin-top: 10px;
+    height: 50px;
+    overflow: clip;
+    overflow-clip-margin: 15px;
+}
+#div3{
+    border: 2px solid;
+    margin-top: 22px;
+    height: 40px;
+    overflow: auto;
+}
+#div4{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    display: inline;
+    /* diplay:block - default
+     display:none - erases*/
+}
+span{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-top: 10px;
+    visibility: hidden;
+    /*hidden - invisible*/
+}
+.Box{
+    border: 2px solid;
+    height: auto;
+    width: 50%;
+    padding: 25px;
+    float: left;
+    text-align: center;
+    background-color: white;
+    min-height: 50%;
+}
+.container{
+    background-color: gray;
+    height: 100vh;
+    /* 100% of avaliable viewport*/
+}

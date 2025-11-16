@@ -1,0 +1,17 @@
+.gallery{
+    display: block;
+    border: 3px solid grey;
+    margin: 8px;
+    width: 550px;
+}
+.gallery .descriptions{
+    text-align: center;
+    padding: 10px;
+}
+.gallery:hover{
+    border-color: blueviolet;
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+}

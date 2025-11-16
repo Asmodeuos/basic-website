@@ -1,0 +1,25 @@
+@font-face{
+    src:url(fonts/Roboto-VariableFont_wdth\,wght.ttf);
+    font-family: Robot-Variable-Font;
+}
+body{
+    background-color: black;
+}
+h1{
+    font-family: Roboto-Variable-Font,verdana, arial;
+    color:white;
+    font-size: 23px;
+    font-weight: bold;
+    font-style: normal;
+}
+#pr{
+    font-family: "lucida console", "courier new";
+    font-size: 0.8em;
+}
+.odd{
+    color: hsl(0, 100%, 50%);
+    font-style: italic;
+}
+.even{
+    color: #dbb108;
+}

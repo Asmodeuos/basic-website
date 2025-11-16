@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formatting stuff</title>
+</head>
+
+<body>
+    <p>This is normal text</p>
+    <p>This is <b>bold</b> text</p>
+    <p>This is <i>italic</i> text</p>
+    <p>This is <u>underlined</u> text</p>
+    <p>This is <del>deleted</del> text</p>
+    <p>This is <big>big</big> text</p>
+    <p>This is <small>small</small> text</p>
+    <p>This is <sub>subcript</sub> text</p>
+    <p>This is <sup>superscript</sup> text</p>
+    <p>This is <tt>monospaced</tt> text</p>
+    <p>This is <mark style="background-color:lightgreen">highlighted</mark> text</p>
+
+    <!-- <span> inline contaner to group elements for styling purposes-->
+    <!-- <div> block contaner  to group elements for styling purposes-->
+    <h1><span style="background-color:tomato;">This is a span title</span></h1>
+    <h1>
+        <div style="background-color:cyan;">This is a div title</div>
+    </h1>
+
+    <p1><span style="background-color:red;">This is a span sentence.</span></p1>
+    <p1>
+        <div style="background-color:lightskyblue;">This is a div sentence.</div>
+    </p1>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing <span style="background-color:lightskyblue;">obcaecati nulla
+            ratione quod</span></p>
+
+    <p>Lorem <mark>ipsum dolor sit</mark>, amet
+    <div style="background-color:lightskyblue;">consectetur adipisicing elit. Temporibus nam ad obcaecati nulla ratione
+    </div>
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- Unordered list -->
+    <h4>Groceries</h4>
+    <ul>
+        <li>milk</li>
+        <li>eggs</li>
+        <li>coffee supplies</li>
+        <ul>
+            <li>coffee powder</li>
+            <li>sugar</li>
+        </ul>
+        <li>wholemeal bread</li>
+    </ul>
+    <br>
+    <!-- Ordered list -->
+    <h4>TO DO LIST</h4>
+    <ol>
+        <li>Do maths homework</li>
+        <li>Play drums</li>
+        <li>read a book</li>
+        <li>Watch tv</li>
+    </ol>
+    <br>
+    <!-- Description list -->
+    <h4>Mythical creature definitions</h4>
+    <dl style="background-color: lightgreen; border: 2px solid">
+        <dt>Dragon</dt>
+        <dd>A large, frightening imaginary animal, often represented with wings, a long tail, and fire coming out of its mouth</dd>
+        <dt>Phoenix</dt>
+        <dd>A bird in Egyptian mythology that lived in the desert for 500 years and then consumed itself by fire, later to rise renewed from its ashes</dd>
+        <dt>Vampire</dt>
+        <dd>In popular folklore, an undead being in human form that survives by sucking the blood of living people, especially at night</dd>
+        <dt>Werewolf</dt>
+        <dd>A person believed to have been transformed into a wolf or to be capable of assuming the form of a wolf</dd>
+    </dl>
+
+    <br>
+    <hr>
+
+    <h3>Store Hours</h3>
+    <table border="1" style="background-color: black;">
+        <tr align="center" style="background-color: lightblue;">
+            <th width="100">Monday</th>
+            <th width="100">Tuesday</th>
+            <th width="100">Wednesday</th>
+            <th width="100">Thursday</th>
+            <th width="100">Friday</th>
+            <th width="100">Saturday</th>
+            <th width="100">Sunday</th>
+        </tr>
+        <tr align="center" style="background-color: aliceblue;">
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>10-2</td>
+            <td>Closed</td>
+        </tr>
+    </table>
+
+    <br>
+    <hr>
+    <br>
+    <a onclick="doSomething()" href="https://www.google.com/" target="_blank">
+        <button style="font-size: 25px; background-color: gray; color: blue; border-radius: 25px;">Magic button</button>
+    </a>
+    <h1 id="greeting">Hello</h1>
+    <script>
+        function doSomething() {
+            document.getElementById("greeting").innerHTML = "HELLO WORLD!"
+        }
+    </script>
+</body>
+
+</html>
